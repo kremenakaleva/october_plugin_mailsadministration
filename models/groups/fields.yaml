@@ -67,10 +67,6 @@ fields:
         span: auto
         default: 1
         type: checkbox
-    reply_to:
-        label: 'Reply to'
-        span: auto
-        type: text
 tabs:
     fields:
         replace_from:

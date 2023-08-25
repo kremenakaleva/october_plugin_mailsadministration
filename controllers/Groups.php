@@ -45,4 +45,14 @@ class Groups extends Controller
         return $this->asExtension('ListController')->listRefresh();
 
     }
+
+    public function formExtendFields($form){
+        $backendUser = \BackendAuth::getUser();
+        if(!$backendUser->is_superuser) {
+            $form->removeField('replace_from');
+            $form->removeField('replace_to');
+            $form->removeField('name_append');
+            $form->removeField('add_reply_to');
+        }
+    }
 }

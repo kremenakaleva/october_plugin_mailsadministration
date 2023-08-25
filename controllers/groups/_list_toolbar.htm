@@ -15,7 +15,7 @@
         data-stripe-load-indicator>
         <?= e(trans('backend::lang.list.delete_selected')) ?>
     </button>
-
+    <?php if($this->user->is_superuser): ?>
     <button
         class="btn btn-default"
         data-request="onSync"
@@ -24,4 +24,5 @@
         data-stripe-load-indicator>
         Sync
     </button>
+    <?php endif; ?>
 </div>
