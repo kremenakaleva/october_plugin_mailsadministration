@@ -7,3 +7,5 @@
     - builder_table_create_pensoft_mailsadministration_groups.php
 1.0.4:
     - 'Drop table pensoft_mailsadministration_data'
+1.0.5:
+    - 'Small change'

@@ -19,21 +19,23 @@ fields:
             1: 'All Moderators'
             2: 'Group Moderators'
         span: auto
-        default: 1
         required: 1
         type: radio
+        default: 1
+        comment: 'When All administrators is selected, all group emails that use all moderators field will  be updated'
     all_moderators:
         label: 'All moderators'
+        mode: string
+        separator: comma
+        customTags: true
+        useKey: false
         span: full
         trigger:
             action: hide
             field: use_moderators_type
             condition: 'value[2]'
-        mode: string
-        separator: comma
-        customTags: true
-        useKey: false
         type: taglist
+        comment: 'All the group emails that use all moderators field will be updated with this value!'
     group_moderators:
         label: 'Group moderators'
         span: full
