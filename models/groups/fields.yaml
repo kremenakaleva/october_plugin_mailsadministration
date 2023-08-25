@@ -1,0 +1,93 @@
+fields:
+    address:
+        label: Address
+        span: full
+        required: 1
+        type: text
+    goto:
+        label: Goto
+        mode: string
+        separator: comma
+        customTags: true
+        useKey: false
+        span: full
+        required: 1
+        type: taglist
+    use_moderators_type:
+        label: 'Use moderators type'
+        options:
+            1: 'All Moderators'
+            2: 'Group Moderators'
+        span: auto
+        default: 1
+        required: 1
+        type: radio
+    all_moderators:
+        label: 'All moderators'
+        span: full
+        trigger:
+            action: hide
+            field: use_moderators_type
+            condition: 'value[2]'
+        mode: string
+        separator: comma
+        customTags: true
+        useKey: false
+        type: taglist
+    group_moderators:
+        label: 'Group moderators'
+        span: full
+        trigger:
+            action: hide
+            field: use_moderators_type
+            condition: 'value[1]'
+        mode: string
+        separator: comma
+        customTags: true
+        useKey: false
+        type: taglist
+    accesspolicy:
+        label: Accesspolicy
+        options:
+            public: public
+            membersAndModeratorsOnly: membersAndModeratorsOnly
+        showSearch: true
+        span: auto
+        type: dropdown
+    domain:
+        label: Domain
+        span: auto
+        disabled: 1
+        readOnly: 1
+        type: text
+    active:
+        label: Active
+        span: auto
+        default: 1
+        type: checkbox
+    reply_to:
+        label: 'Reply to'
+        span: auto
+        type: text
+tabs:
+    fields:
+        replace_from:
+            label: 'Replace from'
+            span: auto
+            type: text
+            tab: 'Replace options'
+        replace_to:
+            label: 'Replace to'
+            span: auto
+            type: text
+            tab: 'Replace options'
+        name_append:
+            label: 'Name append'
+            span: auto
+            type: text
+            tab: 'Replace options'
+        add_reply_to:
+            label: 'Add reply to'
+            span: auto
+            type: text
+            tab: 'Replace options'

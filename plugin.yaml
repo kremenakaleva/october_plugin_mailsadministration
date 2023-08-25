@@ -1,0 +1,11 @@
+plugin:
+    name: 'pensoft.mailsadministration::lang.plugin.name'
+    description: 'pensoft.mailsadministration::lang.plugin.description'
+    author: Pensoft
+    icon: oc-icon-envelope-o
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Mails admininstration'
+        url: pensoft/mailsadministration/groups
+        icon: icon-envelope-o

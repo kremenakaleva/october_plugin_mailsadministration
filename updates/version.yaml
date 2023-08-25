@@ -1,0 +1,9 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table pensoft_mailsadministration_data'
+1.0.3:
+    - 'Created table pensoft_mailsadministration_groups'
+    - builder_table_create_pensoft_mailsadministration_groups.php
+1.0.4:
+    - 'Drop table pensoft_mailsadministration_data'

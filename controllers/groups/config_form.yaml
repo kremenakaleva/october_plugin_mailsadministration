@@ -1,0 +1,10 @@
+name: Groups
+form: $/pensoft/mailsadministration/models/groups/fields.yaml
+modelClass: Pensoft\Mailsadministration\Models\Groups
+defaultRedirect: pensoft/mailsadministration/groups
+create:
+    redirect: 'pensoft/mailsadministration/groups/update/:id'
+    redirectClose: pensoft/mailsadministration/groups
+update:
+    redirect: pensoft/mailsadministration/groups
+    redirectClose: pensoft/mailsadministration/groups

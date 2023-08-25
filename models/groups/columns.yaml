@@ -1,0 +1,71 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    address:
+        label: address
+        type: text
+        searchable: true
+        sortable: true
+    goto:
+        label: goto
+        type: text
+        searchable: true
+        sortable: true
+    all_moderators:
+        label: all_moderators
+        type: text
+        searchable: true
+        sortable: true
+    group_moderators:
+        label: group_moderators
+        type: text
+        searchable: true
+        sortable: true
+    use_moderators_type:
+        label: use_moderators_type
+        type: text
+        searchable: true
+        sortable: true
+    accesspolicy:
+        label: accesspolicy
+        type: text
+        searchable: true
+        sortable: true
+    domain:
+        label: domain
+        type: text
+        searchable: true
+        sortable: true
+    active:
+        label: active
+        type: text
+        searchable: true
+        sortable: true
+    reply_to:
+        label: reply_to
+        type: text
+        searchable: true
+        sortable: true
+    replace_from:
+        label: replace_from
+        type: text
+        searchable: true
+        sortable: true
+    replace_to:
+        label: replace_to
+        type: text
+        searchable: true
+        sortable: true
+    add_reply_to:
+        label: add_reply_to
+        type: text
+        searchable: true
+        sortable: true
+    name_append:
+        label: name_append
+        type: text
+        searchable: true
+        sortable: true
