@@ -169,7 +169,6 @@ class Groups extends Model
                     $arrModerators = array_map('strtolower', $arrModerators);
                     $arrModerators = array_unique($arrModerators);
                     $this->group_moderators = implode(',', $arrModerators);
-
                 }else{
                     throw new \ValidationException([
                         'group_moderators' => 'Group moderators is required!'
@@ -178,6 +177,7 @@ class Groups extends Model
                 $groupModerators = array_unique(array_merge(array('root@psweb.pensoft.net', 'messaging@pensoft.net'), $arrModerators));
                 $groupModerators = array_map('strtolower', $groupModerators);
                 $this->group_moderators = implode(',', $groupModerators);
+                $this->all_moderators = '';
                 break;
         }
 

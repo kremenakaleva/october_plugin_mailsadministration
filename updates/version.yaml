@@ -15,3 +15,5 @@
     - 'Permissions'
 1.0.8:
     - 'Replace from after save'
+1.0.9:
+    - 'Default value for all moderators on create'

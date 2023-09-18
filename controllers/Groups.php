@@ -55,4 +55,12 @@ class Groups extends Controller
             $form->removeField('add_reply_to');
         }
     }
+
+    public function formExtendModel($model){
+        if ($this->formGetContext() === 'create') {
+            $allModeratorsValue = GroupsModel::where('use_moderators_type', 1)->first();
+            $model->all_moderators = $allModeratorsValue->all_moderators;
+            $this->domain = env('GROUPS_DOMAIN') ?? $_SERVER['SERVER_NAME'];
+        }
+    }
 }

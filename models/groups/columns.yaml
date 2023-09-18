@@ -11,17 +11,20 @@ columns:
         sortable: true
     goto:
         label: goto
-        type: text
+        type: partial
+        path: $/pensoft/mailsadministration/partials/_mail_list_column.htm
         searchable: true
         sortable: true
     all_moderators:
         label: all_moderators
-        type: text
+        type: partial
+        path: $/pensoft/mailsadministration/partials/_moderators_mail_list_column.htm
         searchable: true
         sortable: true
     group_moderators:
         label: group_moderators
-        type: text
+        type: partial
+        path: $/pensoft/mailsadministration/partials/_group_moderators_mail_list_column.htm
         searchable: true
         sortable: true
     use_moderators_type:

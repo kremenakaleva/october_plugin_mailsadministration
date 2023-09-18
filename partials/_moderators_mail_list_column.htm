@@ -1,0 +1,9 @@
+<?php
+
+if($record->all_moderators) {
+
+    $data = str_replace(',', ', ', $record->all_moderators);
+    echo $data;
+}
+
+?>
