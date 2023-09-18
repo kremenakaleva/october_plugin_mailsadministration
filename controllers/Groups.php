@@ -3,7 +3,7 @@
 use Backend\Classes\Controller;
 use BackendMenu;
 use Illuminate\Support\Facades\DB;
-use Pensoft\Mails\Models\Groups as GroupsModel;
+use Pensoft\Mailsadministration\Models\Groups as GroupsModel;
 
 class Groups extends Controller
 {

@@ -13,3 +13,5 @@
     - 'Composer'
 1.0.7:
     - 'Permissions'
+1.0.8:
+    - 'Replace from after save'

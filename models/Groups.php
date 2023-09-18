@@ -198,12 +198,14 @@ class Groups extends Model
                 'address' => $this->address. ' domain doesn\'t match the site domain '.$this->domain
             ]);
         }
+        $backendUser = \BackendAuth::getUser();
+        if(!$backendUser->is_superuser && $this->id == null) { //if create and not superuser
+            $this->replace_from = $this->address;
+        }
     }
 
     public function afterSave()
     {
-
-
         $groupEmail = $this->address;
         $groupMembers = $this->goto;
         $groupDomain = $this->domain;
