@@ -19,3 +19,5 @@
     - 'Default value for all moderators on create'
 1.0.10:
     - 'Hide other moudules'
+1.0.11:
+    - 'Permissions fix'

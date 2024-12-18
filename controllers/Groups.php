@@ -96,24 +96,24 @@ class Groups extends Controller
                 ]
             ]);
 
-            $form->addFields([
-                'all_moderators' => [
-                    'label' => 'All moderators',
-                    'mode' => 'string',
-                    'separator' => 'comma',
-                    'customTags' => true,
-                    'useKey' => true,
-                    'span' => 'full',
-                    'type' => 'taglist',
-                    'comment' => 'All the group emails that use all moderators field will be updated with this value!',
-                    'dependsOn' => 'use_moderators_type',
-                    'trigger' => [
-                        'action' => 'hide',
-                        'field' => 'use_moderators_type',
-                        'condition' => 'value[2]',
-                    ]
-                ]
-            ]);
+//            $form->addFields([
+//                'all_moderators' => [
+//                    'label' => 'All moderators',
+//                    'mode' => 'string',
+//                    'separator' => 'comma',
+//                    'customTags' => true,
+//                    'useKey' => true,
+//                    'span' => 'full',
+//                    'type' => 'taglist',
+//                    'comment' => 'All the group emails that use all moderators field will be updated with this value!',
+//                    'dependsOn' => 'use_moderators_type',
+//                    'trigger' => [
+//                        'action' => 'hide',
+//                        'field' => 'use_moderators_type',
+//                        'condition' => 'value[2]',
+//                    ]
+//                ]
+//            ]);
         }
     }
 
