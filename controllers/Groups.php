@@ -53,6 +53,67 @@ class Groups extends Controller
             $form->removeField('replace_to');
             $form->removeField('name_append');
             $form->removeField('add_reply_to');
+            $form->addFields([
+                'address' => [
+                    'label' => 'Address',
+                    'span' => 'full',
+                    'type' => 'text',
+                    'attributes' => [
+                        'disabled' => true
+                    ]
+                ]
+            ]);
+
+            $form->addFields([
+                'use_moderators_type' => [
+                    'label' => 'Use moderators type',
+                    'span' => 'auto',
+                    'type' => 'radio',
+                    'required' => 1,
+                    'default' => 1,
+                    'options' => [
+                        1 => 'All Moderators',
+                        2 => 'Group Moderators'
+                    ],
+                    'attributes' => [
+                        'disabled' => true
+                    ]
+                ]
+            ]);
+
+            $form->addFields([
+                'accesspolicy' => [
+                    'label' => 'Accesspolicy',
+                    'span' => 'auto',
+                    'type' => 'dropdown',
+                    'options' => [
+                        'public' => 'public',
+                        'membersAndModeratorsOnly' => 'membersAndModeratorsOnly'
+                    ],
+                    'attributes' => [
+                        'disabled' => true
+                    ]
+                ]
+            ]);
+
+            $form->addFields([
+                'all_moderators' => [
+                    'label' => 'All moderators',
+                    'mode' => 'string',
+                    'separator' => 'comma',
+                    'customTags' => true,
+                    'useKey' => true,
+                    'span' => 'full',
+                    'type' => 'taglist',
+                    'comment' => 'All the group emails that use all moderators field will be updated with this value!',
+                    'dependsOn' => 'use_moderators_type',
+                    'trigger' => [
+                        'action' => 'hide',
+                        'field' => 'use_moderators_type',
+                        'condition' => 'value[2]',
+                    ]
+                ]
+            ]);
         }
     }
 

@@ -17,3 +17,5 @@
     - 'Replace from after save'
 1.0.9:
     - 'Default value for all moderators on create'
+1.0.10:
+    - 'Hide other moudules'
